@@ -23,6 +23,6 @@ def training_dataset_iterator():
             yield line['text']
 
 # tokenizer.train(training_files, trainer)
-tokenizer = old_tokenizer.train_new_from_iterator(training_dataset_iterator(), 102000, total_line)
+tokenizer = old_tokenizer.train_new_from_iterator(training_dataset_iterator(), 102400, total_line)
 
 tokenizer.save_pretrained("tokenizer-shami")
